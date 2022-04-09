@@ -1,40 +1,43 @@
 // =====================Profile=======================
 
-import Profile from './components/User/profile';
-import user from '../src/data/user.json';
-import Statistics from './components/Statistics/statistics';
-import data from '../src/data/data.json';
-import friends from './data/friends';
-import FriendList from 'components/Friends/friendList';
-import transactions from './data/transactions';
-import TransactionHistory from 'components/Transaction/transactionHistory';
-// import Container from 'components/Container/Container';
+// import Profile from './components/User/profile';
+// import user from '../src/data/user.json';
+// import Statistics from './components/Statistics/statistics';
+// import data from '../src/data/data.json';
+// import friends from './data/friends';
+// import FriendList from 'components/Friends/friendList';
+// import transactions from './data/transactions';
+// import TransactionHistory from 'components/Transaction/transactionHistory';
+
+import Counter from 'components/Counter/Counter';
 export default function App() {
   return (
-    // <Container>
-    <div>
-      <Profile
-        img={user.avatar}
-        name={user.username}
-        tag={user.tag}
-        location={user.location}
-        stats={user.stats}
-      />
+    <Counter />
 
-      <>
-        <Statistics title="Upload stats" stats={data} />
-        <Statistics stats={data} />
-      </>
+    // <Counter>
+    // <div>
+    //   <Profile
+    //     img={user.avatar}
+    //     name={user.username}
+    //     tag={user.tag}
+    //     location={user.location}
+    //     stats={user.stats}
+    //   />
 
-      <>
-        <FriendList friends={friends} />
-      </>
+    //   <>
+    //     <Statistics title="Upload stats" stats={data} />
+    //     <Statistics stats={data} />
+    //   </>
 
-      <>
-        <TransactionHistory items={transactions} />
-      </>
-    </div>
-    // </Container>
+    //   <>
+    //     <FriendList friends={friends} />
+    //   </>
+
+    //   <>
+    //     <TransactionHistory items={transactions} />
+    //   </>
+    // </div>
+    // </Counter>
   );
 }
 

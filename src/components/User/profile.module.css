@@ -1,0 +1,92 @@
+.profile {
+  background-color: #ccc;
+  padding: 30px;
+}
+
+.description {
+  padding: 15px;
+  background-color: #fff;
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.avatar {
+  display: block;
+  max-width: 150px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.tag,
+.location {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.67;
+  letter-spacing: 0em;
+}
+
+.stats {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.label__follow {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #8c8f8f;
+  margin-left: 22px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.label__like {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+.quantity {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stats__item {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 1px solid #8c8c8c;
+  padding: 5px;
+  text-align: center;
+  max-width: 83px;
+  background-color: #f8f8f5;
+}

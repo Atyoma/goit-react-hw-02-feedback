@@ -1,0 +1,38 @@
+.status {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-top: auto;
+  margin-right: 20px;
+}
+
+.avatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.friend__list {
+  list-style: none;
+  padding: 30px;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 15px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -5px -5px 5px -5px rgba(34, 60, 80, 0.6) inset;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}

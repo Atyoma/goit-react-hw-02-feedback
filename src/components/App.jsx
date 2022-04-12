@@ -12,8 +12,7 @@ export class App extends Component {
     bad: 0
   };
   countTotalFeedback = () => {
-    // return (this.state.good + this.state.neutral + this.state.bad); // Хардкор
-    return Object.values(this.state).reduce((total, el) => total + el, 0); // для любого кол-ва
+      return Object.values(this.state).reduce((total, el) => total + el, 0); 
   }
   countPositiveFeedbackPercentage = () => (Math.round(this.state.good / this.countTotalFeedback() * 100));
 
@@ -21,14 +20,14 @@ export class App extends Component {
     const stateName = evt.currentTarget.name;
     this.setState(prev => ({ [stateName]: prev[stateName] + 1 }));
   }
-  btns = () => Object.keys(this.state);
+  reviews = () => Object.keys(this.state);
   
   render() {
     const {good, neutral, bad} = this.state
     return (
       <div>
         <Section title="Please leave feedback">
-          <FeedbackOptions options={this.btns()} onLeaveFeedback={this.onFeedbackHandle}/>
+          <FeedbackOptions options={this.reviews()} onLeaveFeedback={this.onFeedbackHandle}/>
         </Section>
         
         <Section title="Statistics">
@@ -64,12 +63,7 @@ Notification.propTypes = {
 }
 
 
-// import Counter from 'components/Counter/Counter';
-// export default function App() {
-//   return (
-//     <Counter />
-//   );
-// }
+
 
 
 

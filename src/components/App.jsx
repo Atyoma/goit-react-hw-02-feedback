@@ -1,7 +1,7 @@
 import {Component} from 'react';
-import Statistics from './Statistics';
-import FeedbackOptions from "./FeedbackOptions";
 import Section from './Section';
+import FeedbackOptions from "./FeedbackOptions";
+import Statistics from './Statistics';
 import Notification from './Notification';
 import PropTypes from 'prop-types';
 

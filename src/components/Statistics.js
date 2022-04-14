@@ -18,7 +18,7 @@ export default function Statistics({
   );
 }
 
-Section.propType = {
+Statistics.propType = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,

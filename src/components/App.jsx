@@ -3,7 +3,6 @@ import Section from './Section';
 import FeedbackOptions from "./FeedbackOptions";
 import Statistics from './Statistics';
 import Notification from './Notification';
-import PropTypes from 'prop-types';
 
 export class App extends Component {
   state = {
@@ -43,24 +42,10 @@ export class App extends Component {
     );
   }
 };
-FeedbackOptions.propTypes = {
-  options: PropTypes.array,
-  onLeaveFeedback: PropTypes.func
-}
-Section.propType = {
-  title: PropTypes.string,
-  children: PropTypes.node
-}
-Statistics.propTypes = {
-  good: PropTypes.string,
-  neutral: PropTypes.string,
-  bad: PropTypes.string,
-  total: PropTypes.func,
-  positivePercentage: PropTypes.func
-}
-Notification.propTypes = {
-  message: PropTypes.string
-}
+
+
+
+
 
 
 

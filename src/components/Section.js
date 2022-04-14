@@ -1,4 +1,5 @@
 import { SectionBox } from './Section.styled';
+import PropTypes from 'prop-types';
 
 export default function Section({ title, children }) {
   return (
@@ -8,3 +9,8 @@ export default function Section({ title, children }) {
     </SectionBox>
   );
 }
+
+Section.propType = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
